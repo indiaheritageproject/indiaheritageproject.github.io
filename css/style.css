@@ -652,9 +652,6 @@ h6,
   -webkit-animation: tada 2s linear infinite;
   animation: tada 2s linear infinite;
 }
-.logo{
-    max-height: 150px;
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -927,4 +924,24 @@ h6,
 }
 .tab-pane .col-md-4 h2{
   text-transform: uppercase;
+}
+
+.logo {
+  max-height: 140px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Initial navbar size */
+.navbar {
+  height: 150px;
+  transition: height 0.3s ease-in-out;
+}
+
+/* Reduce logo and navbar size when scrolling */
+.navbar.shrink {
+  height: 80px;
+}
+
+.navbar.shrink .logo {
+  max-height: 75px;
 }

@@ -1,6 +1,17 @@
 (function ($) {
     "use strict";
 
+    // JavaScript to shrink navbar on scroll
+window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    
+    if (window.scrollY > 50) {
+        navbar.classList.add('shrink');
+    } else {
+        navbar.classList.remove('shrink');
+    }
+});
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
